@@ -1,0 +1,72 @@
+.cabecalho{
+   background: linear-gradient(90deg,#4b8f0f,#bdc546);
+}
+
+.cabecalho .container{
+   font-family: 'nunito';
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   padding: 2.5% 0;
+   margin: 0 auto;
+   color: #ffffff;
+}
+
+.logo_img{
+   font-weight: 700;
+   font-size: 28px;
+}
+
+.menu_lista{
+   display: flex;
+   gap: 40px;
+}
+
+.item_menu{
+   font-weight: 600;
+   font-size: 16px;
+}
+
+.secao_sobre_nos{
+   margin: 5% 0;
+}
+
+.secao_sobre_nos .container{
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 20px;
+}
+
+.titulo_sobre_nos{
+   font-size: 38px;
+   font-family: 'nunito';
+   font-weight: 600
+}
+
+.txt_sobre_nos{
+   font-weight: 500;
+   font-family: 'lato';
+   color: rgb(15, 15, 15);
+   width: 75%;
+   text-align: center;
+   line-height: 1.4em;
+}
+
+.mapa .container{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 90%;
+   margin: 0 auto;
+}
+
+.titulo_mapa{
+   font-size: 28px;
+   font-family: 'nunito';
+   font-weight: 600;
+   text-align: center;
+}
