@@ -7,13 +7,13 @@ for (let i = 0; i < colecaoEstados.length; i++) {
    estado.addEventListener('click' ,function () {
       var uf = estado.id
       var ufFormatado = uf.slice(3)
+      limpaMunicipios()
       
       apiEstado(ufFormatado)
       apiMunicipio(ufFormatado)
    })
    
 }
-
 
 const apiEstado = async(uf) =>{
    const urlApiEstado = `https://brasilapi.com.br/api/ibge/uf/v1/${uf}`
@@ -30,6 +30,7 @@ const apiMunicipio = async(uf) =>{
    const municipiosSelecionados = await dados.json()
    
    preencheMunicipio(municipiosSelecionados)
+   limpaMunicipios(divMunicipios)
 }
 
 
@@ -43,15 +44,23 @@ function preencheEstado(estadoSelecionado) {
 
 function preencheMunicipio(municipiosSelecionados) {
    var divMunicipios = document.querySelector('.municipios')
-   const elemento = []
-   
    for (let i = 0; i < municipiosSelecionados.length; i++) {
-      elemento.push(municipiosSelecionados[i].nome)
-
+      
+      var tagLi = document.createElement('li')
+      tagLi.classList.add('item_municipios')
+      divMunicipios.appendChild(tagLi)
+      tagLi.textContent = municipiosSelecionados[i].nome
    }
-   divMunicipios.textContent = elemento
 }
 
+function limpaMunicipios() {
+   var divMunicipios = document.querySelector('.municipios')
+   
+   while (divMunicipios.hasChildNodes()) {
+      divMunicipios.removeChild(divMunicipios.firstChild);
+   }
+   
+}
 
 
 
