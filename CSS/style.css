@@ -77,20 +77,19 @@
 
 .mapa_info{
    font-family: 'lato';
-   width: 40%;
-   padding: 5% 2%;
+   width: 35%;
+   padding: 3% 2%;
    border: 1px solid #9b9b9b6b;
    box-shadow: 0px 5px 5px #919191a6;
    background-color: #ffffff;
    border-radius: 6px;
 }
 
-.titulo_info{
-   font-size: 20px;
-   font-weight: 600;
-   text-align: center;
+.mapa_info .container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 15px;
 }
-
 
 .img_mapa_geral path:hover{
    fill: #a9ae7b;
@@ -98,6 +97,25 @@
    transition: 175ms;
 }
 
+
+.titulo_info{
+   font-size: 20px;
+   font-weight: 600;
+   text-align: center;
+}
+
+.nome_estado span{
+   font-weight: 600;
+}
+
+.municipios{
+   background-color: #dbdbdb;
+   height: 400px;
+   width: 80%;
+   overflow-y: scroll;
+   padding: 1.5%;
+   align-self: center;
+}
 
 .rodape{
  background-color: #4b8f0f;
