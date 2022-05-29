@@ -1,0 +1,20 @@
+@media  (max-width:425px) {
+
+   .txt_sobre_nos{
+      width: 90%;
+   }
+
+   .secao_mapa .container{
+      flex-direction: column;
+   }
+
+   .mapa_info{
+      width: 90%;
+      order: 2;
+   }
+
+   .img_mapa_geral{
+      width: 100%;
+   }
+  
+}
