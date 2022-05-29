@@ -5,6 +5,7 @@
    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
    <title>Mapa do Brasil</title>
    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   <link rel="shortcut icon" href="Conteudo/brazil (1).svg" type="image/x-icon">
    <!-- css -->
    <link rel="stylesheet" href="CSS/reset.css">
    <link rel="stylesheet" href="CSS/style.css">
@@ -17,24 +18,25 @@
    <header class="cabecalho">
       <div class="container">
          <div class="logo_cabecalho">
+            <img src="Conteudo/black.png" alt="">
             <h1 class="logo_img">BrasilSil</h1>
          </div>
          
          <ul class="menu_lista">
-            <li class="item_menu">Sobre nos</li>
-            <li class="item_menu">Mapa</li>
+            <li class="item_menu"><a href="#secao_sobre_nos">Sobre nos</a></li>
+            <li class="item_menu"><a href="#secao_mapa">Mapa</a></li>
          </ul>
       </div>
    </header>
    
-   <section class="secao_sobre_nos">
+   <section class="secao_sobre_nos"  id="secao_sobre_nos">
       <div class="container">
          <h2 class="titulo_sobre_nos">Sobre nos</h2>
          <p class="txt_sobre_nos">Nulla vehicula eget elit in aliquam. Nam nec tristique mi, varius porta nisi. Suspendisse bibendum varius mauris vitae porttitor. Nam porttitor quam non placerat vehicula. Sed maximus lorem dui, eget dapibus sem vestibulum a. Quisque semper urna vel felis interdum suscipit. Nam maximus justo commodo consequat viverra.</p>
       </div>
    </section>
    
-   <section class="mapa">
+   <section class="secao_mapa" id="secao_mapa">
       <h1 class="titulo_mapa">Mapa</h1>
       
       <div class="container">
@@ -44,10 +46,9 @@
                <p class="nome_estado">Nome:</p>
                <p class="sigla_estado">Sigla:</p>
                <p class="regiao_estado">Região:</p>
-
-               <div class="municipios">
-
-               </div>
+               <h3 class="titulo_municipios">Municipios</h3>
+               <ol class="municipios">
+               </ol>
             </div>
          </div>
          
