@@ -67,6 +67,23 @@ tutorial.addEventListener('click', function () {
 })
 
 
+
+var telaLargura = screen.width;
+function alteraSVG() {
+   if (telaLargura <= 425) {
+      var svgMapa = document.querySelector('.img_mapa_geral')
+      svgMapa.removeAttribute('mapsvg:geoviewbox')
+      svgMapa.setAttribute('width', '100%')
+      svgMapa.setAttribute('height', '470px')
+      svgMapa.setAttribute('viewBox', '0 0 630 600')
+   }
+}
+
+window.onload = function(){
+   alteraSVG()
+};
+
+
 /* R "await" faz o codigo esperar uma resposta da promessa para entao dar continuidade
 ou seja espera q o fech faça a requisição no servidodor dos "dados" 
 */
