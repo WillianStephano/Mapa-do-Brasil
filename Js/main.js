@@ -3,7 +3,7 @@ mapaBR = document.querySelector('.img_mapa_geral')
 colecaoEstados = mapaBR.getElementsByTagName('path')
 for (let i = 0; i < colecaoEstados.length; i++) {
    const estado = colecaoEstados[i];
-   
+   estado.setAttribute('stroke', '#ffffff')
    estado.addEventListener('click' ,function () {
       var uf = estado.id
       var ufFormatado = uf.slice(3)
