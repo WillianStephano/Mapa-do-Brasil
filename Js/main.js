@@ -30,7 +30,6 @@ const apiMunicipio = async(uf) =>{
    const municipiosSelecionados = await dados.json()
    
    preencheMunicipio(municipiosSelecionados)
-   limpaMunicipios(divMunicipios)
 }
 
 
@@ -62,24 +61,12 @@ function limpaMunicipios() {
    
 }
 
-
+var tutorial = document.querySelector('.tutorial')
+tutorial.addEventListener('click', function () {
+   tutorial.classList.toggle('remove')
+})
 
 
 /* R "await" faz o codigo esperar uma resposta da promessa para entao dar continuidade
 ou seja espera q o fech faça a requisição no servidodor dos "dados" 
 */
-
-
-
-
-/* 
-Codigo feito desta forma temporaria pois por algum motivo desconhecido
-nao consegui trabalhar com funções separadas e chamando elas conforme a necessidade.
-*/
-
-
-
-
-
-
-

@@ -52,8 +52,6 @@ html{
    color: #ffffff;
 }
 
-
-
 .secao_sobre_nos{
    margin: 5% 0;
 }
@@ -119,7 +117,6 @@ html{
    transition: 175ms;
 }
 
-
 .titulo_info{
    font-size: 20px;
    font-weight: 600;
@@ -144,16 +141,51 @@ html{
    border-radius: 4px;
 }
 
-.aaa{
-   fill: red;
+.rodape{
+   background-color: #4b8f0f;
+   color: #ffffff;
+   font-family: 'nunito';
+   font-size: 14px;
+   text-align: center;
+   margin-top: 5%;
+   padding: 1%;
 }
 
-.rodape{
- background-color: #4b8f0f;
- color: #ffffff;
- font-family: 'nunito';
- font-size: 14px;
- text-align: center;
- margin-top: 5%;
- padding: 1%;
+
+.tutorial{
+   position: fixed;
+   background-color: #000000c2;
+   z-index: 1;
+   top: 0;
+   bottom: 0;
+   display: block;
+   width: 100%;
+   cursor: pointer;
+}
+
+.tutorial .container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   row-gap: 30px;
+   margin-top: 25%;
+}
+
+.titulo_tutorial{
+   font-size: 28px;
+   font-weight: 700;
+   font-family: 'nunito';
+   color: #ffffff;
+}
+
+.subtitulo_tutorial{
+   font-size: 16px;
+   font-weight: 700;
+   font-family: 'nunito';
+   color: #ffffff;
+}
+
+.tutorial.remove{
+   display: none;
 }
